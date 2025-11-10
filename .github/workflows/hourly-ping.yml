@@ -2,7 +2,7 @@ name: Hourly Render Ping
 
 on:
   schedule:
-      - cron: '*/14 * * * *'  # Runs every 14 minutes
+      - cron: '*/10 * * * *'  # Runs every 14 minutes
   workflow_dispatch:      # Allows manual triggering
 
 jobs:
@@ -16,3 +16,4 @@ jobs:
           curl -I https://white-water.onrender.com
           curl -I https://white-rock.onrender.com
           curl -I https://quiz-minimal.onrender.com
+          curl -I https://veriscan.onrender.com
